@@ -14,7 +14,7 @@ int main() {
   printf("Please enter a position:\n ");
   scanf("%d", &position);
   chosenBit = (number >> position) & 1;
-  printf("The bit in position %d of number %d is %d\n", position, number, chosenBit);
+  printf("The bit in position %d of number %d is: %d\n", position, number, chosenBit);
   /////
     printf("\nSet bit:\n");
   int whenBitOn;
@@ -25,8 +25,8 @@ int main() {
   scanf("%d", &position);
   whenBitOn = number | 1<<position;
   whenBitOff = number & ~(1<<position);
- printf("Number with bit %d set to 1: %d\n ",number,whenBitOn);
- printf("Number with bit %d set to 0: %d\n ",number,whenBitOff);
+ printf("Number with bit %d set to 1: %d\n ",position,whenBitOn);
+ printf("Number with bit %d set to 0: %d\n ",position,whenBitOff);
  //////
     printf("\nToggle bit:\n");
      printf("Please enter a number:\n ");
