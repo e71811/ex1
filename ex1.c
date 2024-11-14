@@ -61,7 +61,7 @@ int main() {
     index5 = (index5>> 5 ) & 1 ;
     index7 = (index7>> 7 ) & 1 ;
     index11 = (index11>> 11) & 1 ;
-    printf("The 3,5,7,11 bits are:%d%d%d%d\n ",index3,index5,index7,index11);
+    printf("The 3,5,7,11 bits are: %d%d%d%d\n ",index3,index5,index7,index11);
   printf("Bye!\n");
 
   return 0;
