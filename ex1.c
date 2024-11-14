@@ -7,7 +7,7 @@ Assignment: EXERCISE 1
 
 int main() {
   /////
-    printf("\nWhat Bit:\n");
+    printf("\nWhat bit:\n");
   int number,position,chosenBit = 0 ;
   printf("Please enter a number:\n ");
   scanf("%d", &number);
@@ -16,7 +16,7 @@ int main() {
   chosenBit = (number >> position) & 1;
   printf("The bit in position %d of number %d is %d\n", position, number, chosenBit);
   /////
-    printf("\nSet Bit:\n");
+    printf("\nSet bit:\n");
   int whenBitOn;
   int whenBitOff;
   printf("Please enter a number:\n ");
