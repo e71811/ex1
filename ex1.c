@@ -8,11 +8,13 @@ Assignment: EXERCISE 1
 int main() {
   /////
     printf("\nWhat bit:\n");
+  // number represents the number that the user chooses - position represents the number starts from 0 that the user chooses to represent an index
   int number,position,chosenBit = 0 ;
   printf("Please enter a number:\n ");
   scanf("%d", &number);
   printf("Please enter a position:\n ");
   scanf("%d", &position);
+  // i define chosenBit to represent the bit that was choosen by the user
   chosenBit = (number >> position) & 1;
   printf("The bit in position %d of number %d is: %d\n", position, number, chosenBit);
   /////
@@ -57,6 +59,7 @@ int main() {
     int index5 = sum ;
     int index7 = sum ;
     int index11 = sum ;
+    // i defined those Variables to represent the bit compared to the index that i needed by using shift right x times
     index3 = (index3>> 3 ) & 1 ;
     index5 = (index5>> 5 ) & 1 ;
     index7 = (index7>> 7 ) & 1 ;
